@@ -15,7 +15,8 @@ class EmailParser
   def parse
   #  binding.pry
     email_split = @email_string.split(/,|\s/)
-    email_split.reject(&:blank?).uniq!
+    no_empty_arrays = email_split.reject {|x| x.empty?}
+    final_array = no_empty_arrays.uniq!
 
   end
 
