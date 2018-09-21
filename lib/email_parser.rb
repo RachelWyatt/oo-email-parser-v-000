@@ -16,7 +16,7 @@ class EmailParser
   #  binding.pry
     email_split = @email_string.split(/,|\s/)
     no_repeats = email.split.uniq?
-    
+
 
   #  no_empty_arrays = email_split.reject {|x| x.empty?}
   #  final_array = no_empty_arrays.uniq!
