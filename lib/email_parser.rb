@@ -12,7 +12,7 @@ class EmailParser
   end
 
   def parse
-    binding.pry
+  #  binding.pry
     email_string.split
 
   end
