@@ -11,7 +11,7 @@ class EmailParser
   def initialize(email_string)
   end
 
-  def parse(email_string)
+  def parse
     binding.pry
     email_string.split
 
