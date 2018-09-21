@@ -17,6 +17,7 @@ class EmailParser
     email_split = @email_string.split(/,|\s/)
     no_empty_arrays = email_split.reject {|x| x.empty?}
     final_array = no_empty_arrays.uniq!
+    final_array
 
   end
 
