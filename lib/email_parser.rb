@@ -14,8 +14,7 @@ class EmailParser
 
   def parse
   #  binding.pry
-    split_by_comma = @email_string.split(",")
-    split_by_space = split_by_comma.split(" ")
+    @email_string.split("/,| /")
 
   end
 
