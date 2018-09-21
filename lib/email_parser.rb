@@ -16,12 +16,10 @@ class EmailParser
   #  binding.pry
 
     email_split = @email_string.split(/,|\s/)
-    no_repeats = email_split.uniq
-    no_blanks = no_repeats.compact!
-    no_blanks
+    no_repeats = email_split.uniq.compact!
+    #no_blanks = no_repeats.compact!
+    no_repeats
 
-    #no_blanks = no_repeats.reject {|x| x.empty?}
-    #no_blanks
   end
 
 end
