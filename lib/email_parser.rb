@@ -16,7 +16,7 @@ class EmailParser
   #  binding.pry
 
     email_split = @email_string.split(/,|\s/)
-    if any? {|x| x == x}
+    if e_mail.split.any? {|x| x == x}
     no_repeats = email_split.uniq
   else
     puts "Made it!"
