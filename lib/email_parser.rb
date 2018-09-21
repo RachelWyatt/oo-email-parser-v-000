@@ -8,7 +8,7 @@ require 'pry'
 class EmailParser
   attr_accessor :email_string
 
-  def parse
+  def parse(email_string)
     binding.pry
     email_string.split
 
